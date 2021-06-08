@@ -154,7 +154,7 @@
         </div>
       </div>
     </header>
-    <section id="homeeeeeeeeee" class="firstSection">
+    <section id="home" class="firstSection">
       <img class="jungle" src="./img/Untitled-1 1.png" />
       <img class="coin1" src="./img/Group (3).png" />
       <img class="coin3" src="./img/Group (1).png" />
@@ -163,24 +163,24 @@
         <div
           class="firstSection__header d-flex align-items-center justify-content-between"
         >
-          <div class="firstSection__header__menu">
+          <div class="firstSection__header__menu ">
             <h1></h1>
             <img src="./img/Group 8.png" />
             <ul>
               <li>
-                <a class="active" href="#section1">home</a>
+                <a class="active" href="#home">home</a>
               </li>
               <li>
-                <a href="#section1">about us</a>
+                <a href="#avoutUs">about us</a>
               </li>
               <li>
-                <a href="#section1">tokenomics</a>
+                <a href="#tokenomics">tokenomics</a>
               </li>
               <li>
-                <a href="#section1">roadmap</a>
+                <a href="#roadmap">roadmap</a>
               </li>
               <li>
-                <a href="#section1">contact</a>
+                <a href="#contact">contact</a>
               </li>
             </ul>
           </div>
@@ -1177,6 +1177,42 @@
           });
         });
         $(".menuOnScroll a[href*=\\#]:not([href=\\#])").click(function () {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html,body").animate(
+                {
+                  scrollTop: target.offset().top,
+                },
+                1000
+              );
+              return false;
+            }
+          }
+        });
+      });
+
+      $(function () {
+        $(window).on("scroll", function () {
+          var WindowTop = $(window).scrollTop();
+          $("section").each(function (i) {
+            if (
+              WindowTop > $(this).offset().top - 50 &&
+              WindowTop < $(this).offset().top + $(this).outerHeight(true)
+            ) {
+              $(".firstSection__header__menu ul > li > a").removeClass("active");
+              $(".firstSection__header__menu ul li").eq(i).find("a").addClass("active");
+            }
+          });
+        });
+        $(".firstSection__header__menu a[href*=\\#]:not([href=\\#])").click(function () {
           if (
             location.pathname.replace(/^\//, "") ==
               this.pathname.replace(/^\//, "") &&
