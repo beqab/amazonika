@@ -25,19 +25,19 @@
             <div class="menuOnScroll">
               <ul>
                 <li>
-                  <a class="active" href="#home">home</a>
+                  <a class="active" href="/">home</a>
                 </li>
                 <li>
-                  <a href="#avoutUs">about us</a>
+                  <a href="/">about us</a>
                 </li>
                 <li>
-                  <a href="#tokenomics">tokenomics</a>
+                  <a href="/">tokenomics</a>
                 </li>
                 <li>
-                  <a href="#roadmap">roadmap</a>
+                  <a href="/">roadmap</a>
                 </li>
                 <li>
-                  <a href="#contact">contact</a>
+                  <a href="/">contact</a>
                 </li>
               </ul>
             </div>
@@ -150,13 +150,13 @@
 
             <img
               class="d-inline-block d-md-none ml-3 burgerMenu"
-              height="25px"
-              src="./img/243-2431071_white-menu-icon-transparent-png-three-line-menu-button.png"
+              height="32px"
+              src="./img/Category.svg"
             />
             <img
               class="d-none ml-3 burgerMenuClose"
-              height="25px"
-              src="./img/close-x.png"
+              height="32px"
+              src="./img/Close Square.svg"
             />
           </div>
         </div>
@@ -177,19 +177,19 @@
             <img src="./img/Group 8.png" />
             <ul>
               <li>
-                <a class="active" href="#section1">home</a>
+                <a class="active" href="/">home</a>
               </li>
               <li>
-                <a href="#section1">about us</a>
+                <a href="/">about us</a>
               </li>
               <li>
-                <a href="#section1">tokenomics</a>
+                <a href="/">tokenomics</a>
               </li>
               <li>
-                <a href="#section1">roadmap</a>
+                <a href="/">roadmap</a>
               </li>
               <li>
-                <a href="#section1">contact</a>
+                <a href="/">contact</a>
               </li>
             </ul>
           </div>
@@ -337,6 +337,35 @@
       crossorigin="anonymous"
     ></script>
 
-    <script></script>
+    <script>
+      $(".burgerMenu").click(function () {
+        $(".menuOnScroll-col").slideDown();
+        $(this).addClass("d-none");
+        $(this).removeClass("d-inline-block");
+        $(".burgerMenuClose").addClass("d-inline-block");
+      });
+
+      $(function () {
+        $(window).scroll(function (event) {
+          var scroll = $(window).scrollTop();
+          if (scroll > 170) {
+            $(".HeaderFixed").addClass("fixedTrue");
+          } else {
+            $(".HeaderFixed").removeClass("fixedTrue");
+          }
+        });
+      });
+
+      $(".burgerMenuClose").click(function () {
+        $(".menuOnScroll-col").slideUp();
+
+        $(this).addClass("d-none");
+        $(this).removeClass("d-inline-block");
+        // $(".burgerMenu").addClass("d-inline-block")
+        // $(".burgerMenu").removeClass("d-none")
+        $(".burgerMenu").removeClass("d-none");
+        $(".burgerMenu").addClass("d-inline-block");
+      });
+    </script>
   </body>
 </html>
