@@ -259,6 +259,7 @@ a {
 .tokenomics {
   background-color: #e5e5e5;
   padding-bottom: 400px;
+  padding-top: 120px;
   background-color: #e5e5e5;
   background-image: url("../img/Group 85.png");
   background-size: 16%;
@@ -558,9 +559,44 @@ a {
   100% {
     transform: translate(0px, 0px); } }
 
+.newPageContenet {
+  margin-top: 140px; }
+  .newPageContenet .dubbleTitle h2 {
+    font-size: 65px; }
+  .newPageContenet img {
+    max-width: 100%; }
+
+.logosLine {
+  background-color: #fff;
+  margin-top: 40px;
+  padding: 20px 0px; }
+  .logosLine img {
+    max-width: 100%; }
+
 @media only screen and (max-width: 736px) {
+  .HeaderFixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; }
+  #home {
+    margin-top: 80px; }
+  .feature-item {
+    text-align: center !important; }
   .menuOnScroll-col {
-    display: none; }
+    position: absolute;
+    background-color: #2a263c;
+    height: 200px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 45px; }
+  .HeaderFixed .menuOnScroll ul {
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center; }
+  .menuOnScroll {
+    display: block !important; }
   .coin1,
   .coin2,
   .coin3,
@@ -605,7 +641,7 @@ a {
     .stats__item span {
       margin-bottom: 0px; }
   .diagramSvg {
-    transform: translateY(-100px); }
+    padding-bottom: 90px; }
   .tokenomics {
     padding-bottom: 0px; }
   .stats .container > div {
@@ -629,6 +665,9 @@ a {
   .contact {
     padding-top: 14px; } }
 
+.burgerMenu {
+  cursor: pointer; }
+
 .feature-item {
   text-align: left;
   margin-bottom: 40px;
@@ -642,11 +681,9 @@ a {
   .feature-item h3 {
     text-transform: uppercase;
     color: #575467;
-    font-family: "Anton", sans-serif;
-    text-align: left; }
+    font-family: "Anton", sans-serif; }
   .feature-item p {
-    color: #838291;
-    text-align: left; }
+    color: #838291; }
 
 @media only screen and (max-width: 386px) {
   .dubbleTitle span {
