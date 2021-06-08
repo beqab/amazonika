@@ -838,6 +838,18 @@ a {
 }
 
 @media only screen and (max-width: 736px) {
+  .Globally {
+    a {
+      font-size: 12px;
+      margin-top: 30px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
   .HeaderFixed {
     position: fixed;
     width: 100%;
