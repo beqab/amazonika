@@ -15,6 +15,13 @@
   </head>
 
   <body style="background: #e5e5e5;">
+    <audio id="video"
+    style="position: absolute; z-index: 1; top: 0; " class=""
+    controls
+      loop>
+     <source src="../img/amazoniaaaaaaa.mp3" type="audio/ogg">
+     Your browser does not support the audio element.
+   </audio>
     <header class="HeaderFixed">
       <div class="container">
         <div class="row">
@@ -1021,7 +1028,7 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="d-flex justify-content-center">
-          <div class="dubbleTitle mb-5 dubbleTitle-features">
+          <div id="testtt" class="dubbleTitle mb-5 dubbleTitle-features">
             <span>be in touch</span>
             <h2>contact us</h2>
           </div>
@@ -1108,10 +1115,7 @@
           2021 AMAZONIKA LLC - All the rights are reserved
         </div>
       </div>
-      <audio style="position: absolute; z-index: -1; top: 0; " class="" controls autoplay loop>
-        <source src="../img/amazoniaaaaaaa.mp3" type="audio/ogg">
-        Your browser does not support the audio element.
-      </audio>
+     
     </div>
    
     <script
@@ -1129,7 +1133,35 @@
     ></script>
 
     <script>
+    //    window.onload=function(){
+    //   document.getElementById("video").play();
+    // }
+
+    $( document ).ready(function() {
+
+      // $("#testtt").click(function(){
+      //   document.getElementById("video").play();
+
+      // })
+      setTimeout(() => {
+    
+        document.getElementById("video").play();
+      }, 2000);
+
+      setTimeout(() => {
+    
+    document.getElementById("video").play();
+  }, 4000);
+      document.getElementById("video").play();
+
+    })
       $(function () {
+  
+        
+        //  $("#video").get(0).play();
+
+        
+
         $(window).scroll(function (event) {
           var scroll = $(window).scrollTop();
           if (scroll > 170) { 
