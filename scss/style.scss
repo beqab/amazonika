@@ -898,6 +898,8 @@ a {
 .feature-item {
   text-align: left;
   margin-bottom: 40px;
+  max-width: 282px;
+  margin: auto;
   img {
     height: 80px;
     display: inline-block;

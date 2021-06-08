@@ -25,19 +25,19 @@
             <div class="menuOnScroll">
               <ul>
                 <li>
-                  <a class="active" href="#section1">home</a>
+                  <a class="active" href="#home">home</a>
                 </li>
                 <li>
-                  <a href="#section1">about us</a>
+                  <a href="#avoutUs">about us</a>
                 </li>
                 <li>
-                  <a href="#section1">tokenomics</a>
+                  <a href="#tokenomics">tokenomics</a>
                 </li>
                 <li>
-                  <a href="#section1">roadmap</a>
+                  <a href="#roadmap">roadmap</a>
                 </li>
                 <li>
-                  <a href="#section1">contact</a>
+                  <a href="#contact">contact</a>
                 </li>
               </ul>
             </div>
@@ -151,7 +151,7 @@
         </div>
       </div>
     </header>
-    <section class="firstSection">
+    <section id="home" class="firstSection">
       <img class="jungle" src="./img/Untitled-1 1.png" />
       <img class="coin1" src="./img/Group (3).png" />
       <img class="coin3" src="./img/Group (1).png" />
@@ -229,7 +229,7 @@
         </div>
       </div>
     </section>
-    <section class="aboutUs">
+    <section id="avoutUs" class="aboutUs">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -339,7 +339,7 @@
         </div>
       </div>
     </div>
-    <section class="tokenomics">
+    <section id="tokenomics" class="tokenomics">
       <div class="container">
         <div class="row">
           <div
@@ -631,7 +631,7 @@
         </div>
       </div>
     </div>
-    <div class="roadmap">
+    <section id="roadmap" class="roadmap">
       <div class="d-flex justify-content-center">
         <div class="dubbleTitle dubbleTitle-features">
           <span>OUR FUTURE ROADMAP</span>
@@ -788,7 +788,7 @@
             </p>
           </div> -->
       </div>
-    </div>
+    </secrion>
     <div class="faq">
       <!-- //////////////////////////// -->
 
@@ -1099,7 +1099,7 @@
         </div>
       </div>
     </div>
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <div class="d-flex justify-content-center">
           <div class="dubbleTitle mb-5 dubbleTitle-features">
@@ -1191,9 +1191,7 @@
       </div>
     </div>
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
+      src="https://code.jquery.com/jquery-3.1.0.js"
     ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -1214,6 +1212,42 @@
             $(".HeaderFixed").addClass("fixedTrue");
           } else {
             $(".HeaderFixed").removeClass("fixedTrue");
+          }
+        });
+      });
+
+      $(function () {
+        $(window).on("scroll", function () {
+          var WindowTop = $(window).scrollTop();
+          $("section").each(function (i) {
+            if (
+              WindowTop > $(this).offset().top - 50 &&
+              WindowTop < $(this).offset().top + $(this).outerHeight(true)
+            ) {
+              $(".menuOnScroll ul > li > a").removeClass("active");
+              $(".menuOnScroll ul li").eq(i).find("a").addClass("active");
+            }
+          });
+        });
+        $("a[href*=\\#]:not([href=\\#])").click(function () {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html,body").animate(
+                {
+                  scrollTop: target.offset().top,
+                },
+                1000
+              );
+              return false;
+            }
           }
         });
       });
