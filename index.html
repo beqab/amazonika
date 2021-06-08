@@ -154,7 +154,7 @@
         </div>
       </div>
     </header>
-    <section id="home" class="firstSection">
+    <section id="homeeeeeeeeee" class="firstSection">
       <img class="jungle" src="./img/Untitled-1 1.png" />
       <img class="coin1" src="./img/Group (3).png" />
       <img class="coin3" src="./img/Group (1).png" />
@@ -1101,18 +1101,19 @@
         </div>
       </div>
     </section>
-    <div class="footer">
+    <div style="position: relative;" class="footer">
       <div class="container">
         <div class="rowFottr d-flex align-items-center justify-content-between">
           <img src="./img/Group 8.png" />
           2021 AMAZONIKA LLC - All the rights are reserved
         </div>
       </div>
+      <audio style="position: absolute; z-index: -1; top: 0; " class="" controls autoplay loop>
+        <source src="../img/amazoniaaaaaaa.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
     </div>
-    <audio class="d-none" controls autoplay loop>
-      <source src="../img/amazoniaaaaaaa.mp3" type="audio/ogg">
-      Your browser does not support the audio element.
-    </audio>
+   
     <script
       src="https://code.jquery.com/jquery-3.1.0.js"
     ></script>
@@ -1175,7 +1176,7 @@
             }
           });
         });
-        $("a[href*=\\#]:not([href=\\#])").click(function () {
+        $(".menuOnScroll a[href*=\\#]:not([href=\\#])").click(function () {
           if (
             location.pathname.replace(/^\//, "") ==
               this.pathname.replace(/^\//, "") &&
