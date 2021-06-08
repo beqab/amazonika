@@ -1,0 +1,901 @@
+@import url("//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid + Circular + B + Medium");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+//font-family: 'Anton', sans-serif;
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("EuclidCircularB-Bold.eot");
+  src: local("Euclid Circular B Bold"), local("EuclidCircularB-Bold"),
+    url("../fonts/EuclidCircularB-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-Bold.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-Bold.woff") format("woff"),
+    url("../fonts/EuclidCircularB-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-Italic.eot");
+  src: local("Euclid Circular B Italic"), local("EuclidCircularB-Italic"),
+    url("../fonts/EuclidCircularB-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-Italic.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-Italic.woff") format("woff"),
+    url("../fonts/EuclidCircularB-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-Medium.eot");
+  src: local("Euclid Circular B Medium"), local("EuclidCircularB-Medium"),
+    url("../fonts/EuclidCircularB-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-Medium.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-Medium.woff") format("woff"),
+    url("../fonts/EuclidCircularB-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-SemiBoldItalic.eot");
+  src: local("Euclid Circular B SemiBold Italic"),
+    local("EuclidCircularB-SemiBoldItalic"),
+    url("../fonts/EuclidCircularB-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-SemiBoldItalic.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-SemiBoldItalic.woff") format("woff"),
+    url("../fonts/EuclidCircularB-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-BoldItalic.eot");
+  src: local("Euclid Circular B Bold Italic"),
+    local("EuclidCircularB-BoldItalic"),
+    url("../fonts/EuclidCircularB-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-BoldItalic.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-BoldItalic.woff") format("woff"),
+    url("../fonts/EuclidCircularB-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-MediumItalic.eot");
+  src: local("Euclid Circular B Medium Italic"),
+    local("EuclidCircularB-MediumItalic"),
+    url("../fonts/EuclidCircularB-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-MediumItalic.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-MediumItalic.woff") format("woff"),
+    url("../fonts/EuclidCircularB-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-SemiBold.eot");
+  src: local("Euclid Circular B SemiBold"), local("EuclidCircularB-SemiBold"),
+    url("../fonts/EuclidCircularB-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-SemiBold.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-SemiBold.woff") format("woff"),
+    url("../fonts/EuclidCircularB-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-Light.eot");
+  src: local("Euclid Circular B Light"), local("EuclidCircularB-Light"),
+    url("../fonts/EuclidCircularB-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-Light.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-Light.woff") format("woff"),
+    url("../fonts/EuclidCircularB-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-Regular.eot");
+  src: local("Euclid Circular B Regular"), local("EuclidCircularB-Regular"),
+    url("../fonts/EuclidCircularB-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-Regular.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-Regular.woff") format("woff"),
+    url("../fonts/EuclidCircularB-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Euclid Circular B";
+  src: url("../fonts/EuclidCircularB-LightItalic.eot");
+  src: local("Euclid Circular B Light Italic"),
+    local("EuclidCircularB-LightItalic"),
+    url("../fonts/EuclidCircularB-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EuclidCircularB-LightItalic.woff2") format("woff2"),
+    url("../fonts/EuclidCircularB-LightItalic.woff") format("woff"),
+    url("../fonts/EuclidCircularB-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+body {
+  // font-family: "Euclid Circular B Medium";
+  padding-bottom: 400px;
+  //   background: #e5e5e5;
+  font-family: "Euclid Circular B";
+}
+a {
+  // font-family: "Euclid Circular B Medium";
+  font-family: "Euclid Circular B";
+}
+
+.HeaderFixed {
+  position: relative;
+  background: #2a263c;
+  z-index: 1;
+
+  padding: 10px 0;
+  color: #fff;
+  // transition: all 0.2s;
+  &.fixedTrue {
+    position: fixed;
+    z-index: 10;
+
+    width: 100%;
+    z-index: 40;
+    top: 0px;
+    left: 0px;
+    animation: showHeader 0.5s ease-out;
+    // float 6s ease-in-out infinite;
+    .menuOnScroll {
+      display: block;
+    }
+  }
+  .menuOnScroll {
+    display: none;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      a {
+        color: #fff;
+        border-bottom: 2px transparent;
+
+        &.active,
+        &:hover {
+          border-bottom: 2px solid;
+          color: #7cb46b;
+        }
+      }
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+  &__right {
+    a {
+      margin: 0 5px;
+      display: inline-block;
+    }
+  }
+}
+
+.btns {
+  &-green {
+    background: #7cb46b;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 31px 34px -14px rgba(37, 74, 31, 0.3),
+      inset 8px -8px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    text-transform: uppercase;
+    width: 140px;
+    &-darkGreen {
+      background: #51684b;
+    }
+    &-ligth {
+      background: #fff !important;
+      color: #51684b;
+      border: 2px solid;
+      box-shadow: none;
+    }
+  }
+}
+.brns {
+  a {
+    transform: scale(0.7);
+  }
+}
+
+.firstSection {
+  position: relative;
+  max-height: 100vh;
+  height: calc(100vh - 135px);
+  min-height: 760px;
+
+  .sectinFutter {
+    background: #403d50;
+    padding: 20px 0;
+    a {
+      color: rgba(255, 255, 255, 0.7);
+      margin-right: 20px;
+      &:hover {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  .container {
+    height: 100%;
+  }
+  .jungle {
+    position: absolute;
+    width: 46%;
+    right: 30px;
+    top: -70px;
+    max-height: 95vh;
+    // max-width: calc();
+  }
+  .coin1 {
+    position: absolute;
+    left: 59%;
+    top: -74px;
+    z-index: 2;
+    max-width: 136px;
+    width: 7vw;
+  }
+  .coin2 {
+    position: absolute;
+    left: -21%;
+    top: 9px;
+    z-index: 2;
+    max-width: 116px;
+    width: 6vw;
+    animation: float 6s ease-in-out infinite;
+  }
+  .coin3 {
+    position: absolute;
+    left: 89%;
+    top: 50%;
+    z-index: 2;
+    max-width: 76px;
+    width: 3vw;
+    animation: float2 26s ease-in-out infinite;
+  }
+
+  .coin4 {
+    position: absolute;
+    left: 59%;
+    top: 40%;
+    z-index: 2;
+    max-width: 116px;
+    width: 5vw;
+    animation: float3 16s ease-in-out infinite;
+  }
+
+  &__content {
+    margin-top: 80px;
+    max-width: 500px;
+    position: relative;
+    p.dark {
+      color: #272538;
+    }
+    p {
+      color: #6d6b7c;
+    }
+    .heding {
+      position: relative;
+      font-weight: bold;
+      text-transform: uppercase;
+      div {
+        color: #b1b0bc;
+        font-family: "Euclid Circular B";
+
+        font-size: 40px;
+      }
+      span {
+        font-size: 100px;
+        color: #2a263c;
+        font-family: "Euclid Circular B";
+        line-height: 100%;
+        margin-bottom: 30px;
+        display: inline-block;
+        text-shadow: 0px 68px 80px rgba(42, 38, 60, 0.34);
+      }
+    }
+  }
+  &__header {
+    font-family: "Euclid Circular B Medium";
+    margin-top: 30px;
+    position: relative;
+    &__menu {
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 50px;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin: 0 14px;
+        font-weight: bold;
+      }
+      a {
+        text-transform: uppercase;
+        color: #6d6b7c;
+        display: inline-block;
+        padding-bottom: 2px;
+        &.active {
+          border-bottom: 2px solid;
+          color: #7cb46b;
+        }
+      }
+    }
+  }
+}
+
+.aboutUs {
+  padding-top: 190px;
+  background-color: #e5e5e5;
+  background-image: url("../img/Group 86.png"), url("../img/Group 83.png");
+  background-repeat: no-repeat;
+  background-size: 16%;
+  background-position: 0 0, right top;
+  padding-bottom: 250px;
+
+  img {
+    max-width: 100%;
+  }
+}
+.features {
+  background-color: #e5e5e5;
+  padding-bottom: 400px;
+  .dubbleTitle {
+    span {
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.tokenomics {
+  background-color: #e5e5e5;
+  padding-bottom: 400px;
+  background-color: #e5e5e5;
+  background-image: url("../img/Group 85.png");
+  background-size: 16%;
+  background-position: left bottom;
+  padding-bottom: 250px;
+  background-repeat: no-repeat;
+}
+
+.stats {
+  color: #fff;
+  background: #51684b;
+  padding: 30px 0;
+  text-align: center;
+  &__item {
+    span {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    div {
+      font-family: "Anton", sans-serif;
+    }
+    font-size: 26px;
+  }
+}
+
+.roadmap {
+  background-color: #e5e5e5;
+  padding-top: 100px;
+  position: relative;
+  min-height: 1000px;
+  background-image: url("../img/Group213.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  .dubbleTitle {
+    span {
+      transform: translate(-50%, -59%);
+      left: 50%;
+    }
+  }
+  .roadImage {
+    position: absolute;
+    max-width: 1300px;
+    transform: translate(-50%, -279px);
+    left: 50%;
+    // min-width: calc(100% - 80px);
+  }
+
+  &__item {
+    max-width: 40%;
+    div {
+      color: #51684b;
+      padding-bottom: 4px;
+      font-size: 20px;
+      border-bottom: 3px dashed;
+    }
+    span {
+      font-weight: bold;
+      font-size: 20px;
+      padding-top: 10px;
+      display: inline-block;
+    }
+    p {
+      color: #838291;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    &-1 {
+      text-align: right;
+      margin-left: 20%;
+      margin-top: 100px;
+    }
+    &-2 {
+      text-align: right;
+      margin-left: 28%;
+      margin-top: 100px;
+    }
+    &-3 {
+      text-align: right;
+      margin-left: 42%;
+      margin-top: 100px;
+    }
+    &-4 {
+      //   text-align: right;
+      // margin-left: 42%;
+      margin-top: 280px;
+    }
+    &-5 {
+      margin-top: 100px;
+      margin-left: 12%;
+    }
+
+    &-6 {
+      margin-top: 100px;
+      margin-left: 18%;
+    }
+
+    &-7 {
+      margin-top: 100px;
+      margin-left: 12%;
+    }
+    &-8 {
+      margin-top: 100px;
+    }
+    &-9 {
+      margin-left: auto;
+      text-align: right;
+      margin-top: 250px;
+    }
+    &-10 {
+      margin-left: 43%;
+      text-align: right;
+      margin-top: 100px;
+    }
+    &-11 {
+      margin-left: 33%;
+      text-align: right;
+      margin-top: 100px;
+    }
+    &-12 {
+      margin-left: 43%;
+      text-align: right;
+      margin-top: 100px;
+    }
+
+    &-13 {
+      margin-left: auto;
+      text-align: right;
+      margin-top: 100px;
+    }
+    &-14 {
+      // margin-left: ;
+      text-align: right;
+      margin-top: 100px;
+    }
+    &-15 {
+      // margin-left: ;
+      text-align: right;
+      margin-top: 100px;
+      margin-left: 20%;
+      padding-bottom: 300px;
+    }
+  }
+}
+
+.buy_Tokens {
+  height: 60px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50px;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    107.79deg,
+    #7cb46b 1.1%,
+    #fe950a 1.1%,
+    #eb8600 73.13%
+  );
+  border: 5px solid #ffcd8a;
+}
+
+.dubbleTitle {
+  position: relative;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+
+  span {
+    position: absolute;
+    font-size: 100px;
+    font-family: "Anton", sans-serif;
+    white-space: nowrap;
+    color: rgba(124, 180, 107, 0.1);
+    transform: translate(-59px, -59%);
+  }
+  h2 {
+    font-size: 44px;
+    color: #2a263c;
+    text-shadow: 0px 68px 80px rgba(42, 38, 60, 0.34);
+    font-weight: bold;
+    font-family: "Anton", sans-serif;
+  }
+}
+
+.accordion-section .panel-default > .panel-heading {
+  border: 0;
+  background: #f4f4f4;
+  background: #f1f7ef;
+  padding: 0;
+  border-radius: 15px;
+  transition: 0.3s;
+  &:hover {
+    background-color: #7cb46b;
+    a {
+      color: #fff;
+    }
+  }
+}
+.accordion-section .panel-default .panel-title a {
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+  color: #403d50;
+  padding-right: 40px;
+  position: relative;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.accordion-section .panel-default .panel-title a:after {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-size: 3rem;
+  content: "";
+  height: 30px;
+  width: 30px;
+  //   color: #1f7de2;
+  float: right;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+
+  background-image: url("../img/Arrow - Down Circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+  //   content: "\f107";
+  transform: translateY(-50%);
+}
+.accordion-section .panel-default .panel-body {
+  font-size: 1.2rem;
+}
+
+.faq {
+  padding-top: 250px;
+  h3 {
+    margin-bottom: 0px;
+  }
+}
+
+.contact {
+  padding-top: 150px;
+  margin-top: 100px;
+  background: #f1f7ef;
+  background-image: url("../img/Group286.png");
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: 15%;
+
+  .container {
+    max-width: 700px;
+    input,
+    textarea {
+      border: 1px solid rgba(81, 104, 75, 0.4);
+      font-size: 14px;
+      border-radius: 8px;
+      &::placeholder {
+        color: rgba(6, 33, 38, 0.5);
+      }
+    }
+  }
+  .dubbleTitle {
+    span {
+      left: 50%;
+      transform: translate(-50%, -59%);
+    }
+
+    margin-bottom: 80px;
+  }
+}
+
+.footer {
+  padding-top: 70px;
+  .subscribe {
+    display: flex;
+    input {
+      border: 1px solid rgba(81, 104, 75, 0.4);
+      border-right: none;
+      display: inline-block;
+      padding: 4px 10px;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    button {
+      border: 1px solid rgba(81, 104, 75, 0.4);
+      border-left: none;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+  label {
+    color: #403d50;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  a {
+    color: #403d50;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .contacts {
+    text-align: right;
+    > div {
+      // display: flex;
+      // flex
+      margin-bottom: 12px;
+      max-width: 269px;
+      display: flex;
+      margin-left: auto;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      span {
+        display: inline-block;
+        width: 230px;
+        line-height: 24px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    // box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, 0px);
+  }
+  50% {
+    // box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, 10px);
+  }
+  100% {
+    // box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    // box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  50% {
+    // box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translate(0px, 15px) rotateZ(60deg);
+  }
+  100% {
+    // box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    // box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  50% {
+    // box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translate(10px, 15px) rotateZ(26deg);
+  }
+  100% {
+    // box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+}
+
+@keyframes showHeader {
+  0% {
+    // box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, -70px);
+  }
+
+  100% {
+    // box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translate(0px, 0px);
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .menuOnScroll-col {
+    display: none;
+  }
+  .coin1,
+  .coin2,
+  .coin3,
+  .coin4 {
+    display: none;
+  }
+  .firstSection__header__menu {
+    display: none;
+  }
+  .firstSection__content .heding span {
+    font-size: 50px;
+  }
+  .jungle {
+    display: none;
+  }
+  .buy_Tokens {
+    margin: auto;
+  }
+
+  .firstSection__content {
+    margin: auto;
+    margin-top: 46px;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+  }
+  .HeaderFixed {
+    font-size: 13px;
+  }
+  .dubbleTitle {
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+
+    span {
+      position: absolute;
+      font-size: 52px;
+      font-family: "Anton", sans-serif;
+      white-space: nowrap;
+      color: rgba(124, 180, 107, 0.1);
+      transform: translate(-50%, -50%);
+      left: 50%;
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  .firstSection__header > div {
+    margin: auto;
+  }
+
+  .stats__item {
+    font-size: 17px;
+    width: 33%;
+    margin-bottom: 5px;
+    span {
+      margin-bottom: 0px;
+    }
+  }
+  .diagramSvg {
+    transform: translateY(-100px);
+  }
+  .tokenomics {
+    padding-bottom: 0px;
+  }
+  .stats .container > div {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .roadImage {
+    display: none;
+  }
+  .roadmap__item {
+    margin-left: auto !important;
+    margin-right: 0px !important;
+    max-width: 80%;
+    text-align: right !important;
+    margin-top: 30px !important;
+  }
+
+  .faq {
+    padding-top: 50px;
+  }
+
+  .roadmap__item-15 {
+    padding-bottom: 78px;
+  }
+
+  .btns-green {
+    height: 49px;
+    font-size: 13px;
+  }
+
+  .contact {
+    padding-top: 14px;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  .dubbleTitle {
+    span {
+      position: absolute;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  .sectinFutter {
+    font-size: 11px;
+  }
+}
