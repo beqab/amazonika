@@ -15,13 +15,32 @@
   </head>
 
   <body style="background: #e5e5e5;">
-    <audio id="video"
-    style="position: absolute; z-index: 1; top: 0; " class=""
-    controls
-      loop>
-     <source src="../img/amazoniaaaaaaa.mp3" type="audio/ogg">
-     Your browser does not support the audio element.
-   </audio>
+    <!-- <audio id="audio"
+ 
+    autoplay
+    loop
+    
+    
+      >
+     <source src="./img/amazoniaaaaaaa.mp3" type="audio/ogg">
+
+   </audio> -->
+
+   <audio id="audio" controls="" style="position: absolute;" style="width: 100%;">
+    <source src="./img/amazoniaaaaaaa.mp3" type="audio/mpeg">
+    Please update your browser does not support the audio element.</audio>
+
+
+   <!-- <iframe src="./img/amazoniaaaaaaa.mp3" allow="autoplay" id="audio"></iframe> -->
+   <!-- <audio  id="video" muted  autoplay controls><source src="./img/amazoniaaaaaaa.mp3" type="audio/mp3"></audio> -->
+
+   <!-- <audio autoplay loop  id="playAudio">
+    <source src="./img/amazoniaaaaaaa.mp3">
+</audio>
+
+   <iframe src="./img/amazoniaaaaaaa.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+   </iframe>  -->
+
     <header class="HeaderFixed">
       <div class="container">
         <div class="row">
@@ -1110,6 +1129,7 @@
     </section>
     <div style="position: relative;" class="footer">
       <div class="container">
+
         <div class="rowFottr d-flex align-items-center justify-content-between">
           <img src="./img/Group 8.png" />
           2021 AMAZONIKA LLC - All the rights are reserved
@@ -1133,34 +1153,32 @@
     ></script>
 
     <script>
+
     //    window.onload=function(){
     //   document.getElementById("video").play();
     // }
 
+//     window.onload = function() {
+//     document.getElementById("video").play();
+// }
+
+
+
+
+
     $( document ).ready(function() {
+      $("body").mousemove(function() {
+        console.log("move")
+        document.getElementById("audio").play();
+});
 
-      // $("#testtt").click(function(){
-      //   document.getElementById("video").play();
-
-      // })
-      setTimeout(() => {
-    
-        document.getElementById("video").play();
-      }, 2000);
-
-      setTimeout(() => {
-    
-    document.getElementById("video").play();
-  }, 4000);
-      document.getElementById("video").play();
 
     })
-      $(function () {
-  
+ 
         
         //  $("#video").get(0).play();
 
-        
+        $(function(){
 
         $(window).scroll(function (event) {
           var scroll = $(window).scrollTop();
