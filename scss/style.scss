@@ -837,7 +837,45 @@ a {
   }
 }
 
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 1320px) {
+  .roadmap {
+    overflow: hidden;
+  }
+  .firstSection .jungle {
+    position: absolute;
+    width: 43%;
+    right: 7px;
+    top: -70px;
+    max-height: 95vh;
+  }
+
+  .firstSection__header ul a {
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .HeaderFixed {
+    font-size: 12px;
+  }
+  .firstSection__header ul a {
+    font-size: 14px;
+  }
+
+  .firstSection__content .heding span {
+    font-size: 77px;
+  }
+
+  .changePage {
+    font-size: 12px;
+  }
+
+  .roadmap .container {
+    max-width: 1120px !important;
+  }
+}
+
+@media only screen and (max-width: 720px) {
   .Globally {
     a {
       font-size: 12px;
