@@ -213,7 +213,7 @@
           </div>
           <div class="text-right">
             <a href="" class="buy_Tokens">
-              BUY TOKENS
+              BUY NOW
             </a>
           </div>
         </div>
@@ -236,26 +236,21 @@
           <div
             class="btns mt-5 d-flex justify-content-md-start justify-content-center"
           >
-            <a class="btns-green" href="">
-              How to Buy
-            </a>
-            <a class="btns-green btns-green-darkGreen mx-md-3 mx-1" href="">
-              How to Buy
-            </a>
-            <a class="btns-green btns-green-ligth" href="">
-              How to Buy
-            </a>
+          <div id="timer" class="d-flex">
+            <div id="days"></div>
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+          </div>
           </div>
         </div>
       </div>
       <div class="sectinFutter">
         <div class="container">
           <a href="">
-            check our contract address
+           <center> CONTRACT ADDRESS WILL BE REVEALED ON JUNE 13TH </center>
           </a>
-          <a href="">
-            subscribe to our newsletter
-          </a>
+          
         </div>
       </div>
     </section>
@@ -336,7 +331,7 @@
 
            <div class="btns mt-5 d-flex">
             <a style="width: 260px;" class="btns-green m-auto" href="/amazonika/about.html">
-              learn about amazon
+              learn more about the amazon
             </a>
           </div>
     </div>
@@ -357,7 +352,7 @@
             class="d-md-inline-block d-none"
             src="./img/Group (2)fsfs.png"
         /></span>
-        <h2>why us?</h2>
+        <h2>FEATURES</h2>
       </div>
 
       <div class="container">
@@ -581,42 +576,37 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="stats__item">
             <span>
-              amazonika Holders
+              Amazonika Holders
             </span>
-            <div>275k</div>
+            <div>0</div>
           </div>
           <div class="stats__item">
             <span>
               Market Cap
             </span>
-            <div>$40m+</div>
+            <div>0</div>
           </div>
           <div class="stats__item">
             <span>
               Donated to Charity
             </span>
-            <div>$19500+</div>
+            <div>0</div>
           </div>
           <div class="stats__item">
             <span>
               Goats in Discords
             </span>
-            <div>6000+</div>
+            <div>0</div>
           </div>
-          <div class="stats__item">
-            <span>
-              Goats in Discord
-            </span>
-            <div>34000+</div>
-          </div>
+          
         </div>
       </div>
     </div>
     <section id="roadmap" class="roadmap">
       <div class="d-flex justify-content-center">
         <div class="dubbleTitle dubbleTitle-features">
-          <span>OUR FUTURE ROADMAP</span>
-          <h2>OUR FUTURE ROADMAP</h2>
+          <span>ROADMAP</span>
+          <h2>ROADMAP</h2>
         </div>
       </div>
       <img src="./img/Group 91.png" class="roadImage" />
@@ -1129,20 +1119,7 @@
               />
             </div>
           </div>
-          <div class="row">
-            <div
-              class="col-lg-12 col-md-12 col-sm-12"
-              style="padding-bottom: 10px;"
-            >
-              <input
-                class="form-control"
-                name="phone"
-                placeholder="phone"
-                type="text"
-                required
-              />
-            </div>
-          </div>
+         
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
               <textarea
@@ -1170,7 +1147,7 @@
 
         <div class="rowFottr d-flex align-items-center justify-content-between">
           <img src="./img/Group 8.png" />
-          2021 AMAZONIKA LLC - All the rights are reserved
+          2021 AMAZONIKA - All the rights are reserved
         </div>
       </div>
      
@@ -1204,14 +1181,34 @@
 
 
 
-    $( document ).ready(function() {
-      $("body").mousemove(function() {
-        console.log("move")
-        document.getElementById("audio").play();
-});
+function makeTimer() {
 
+//		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+  var endTime = new Date("29 Jul 2021 9:56:00 GMT+01:00");			
+    endTime = (Date.parse(endTime) / 1000);
 
-    })
+    var now = new Date();
+    now = (Date.parse(now) / 1000);
+
+    var timeLeft = endTime - now;
+
+    var days = Math.floor(timeLeft / 86400); 
+    var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+    var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+    if (hours < "10") { hours = "0" + hours; }
+    if (minutes < "10") { minutes = "0" + minutes; }
+    if (seconds < "10") { seconds = "0" + seconds; }
+
+    $("#days").html(days + "<span> Days</span>");
+    $("#hours").html(hours + "<span> Hours</span>");
+    $("#minutes").html(minutes + "<span> Minutes</span>");
+    $("#seconds").html(seconds + "<span> Seconds</span>");		
+
+}
+
+setInterval(function() { makeTimer(); }, 1000);
  
         
         //  $("#video").get(0).play();

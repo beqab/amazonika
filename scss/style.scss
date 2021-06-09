@@ -913,6 +913,33 @@ a {
   }
 }
 
+#timer {
+  align-items: center;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 8px;
+  > div {
+    margin-right: 20px;
+  }
+}
+
+#days {
+  font-size: 20px;
+  color: #7cb46b;
+}
+#hours {
+  font-size: 20px;
+  color: #7cb46b;
+}
+#minutes {
+  font-size: 20px;
+  color: #7cb46b;
+}
+#seconds {
+  font-size: 20px;
+  color: #7cb46b;
+}
+
 @media only screen and (max-width: 1320px) {
   .roadmap {
     overflow: hidden;

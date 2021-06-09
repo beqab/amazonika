@@ -637,6 +637,30 @@ a {
     .taxProcentLine .procent1 div {
       background: linear-gradient(90deg, #2e6ba9 0%, rgba(46, 107, 169, 0.7) 100%); }
 
+#timer {
+  align-items: center;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 8px; }
+  #timer > div {
+    margin-right: 20px; }
+
+#days {
+  font-size: 20px;
+  color: #7cb46b; }
+
+#hours {
+  font-size: 20px;
+  color: #7cb46b; }
+
+#minutes {
+  font-size: 20px;
+  color: #7cb46b; }
+
+#seconds {
+  font-size: 20px;
+  color: #7cb46b; }
+
 @media only screen and (max-width: 1320px) {
   .roadmap {
     overflow: hidden; }
