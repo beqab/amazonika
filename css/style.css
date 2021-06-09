@@ -617,7 +617,7 @@ a {
   .roadmap .container {
     max-width: 1120px !important; } }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   .Globally a {
     font-size: 12px;
     margin-top: 30px; }
