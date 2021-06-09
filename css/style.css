@@ -98,7 +98,8 @@ a {
     left: 0px;
     animation: showHeader 0.5s ease-out; }
     .HeaderFixed.fixedTrue .menuOnScroll {
-      display: block; }
+      display: block;
+      line-height: 31px; }
   .HeaderFixed .menuOnScroll {
     display: none; }
     .HeaderFixed .menuOnScroll ul {
