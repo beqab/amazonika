@@ -695,9 +695,23 @@ a {
   .roadmap .container {
     max-width: 1120px !important; } }
 
+.dubbleTitle-Globally span {
+  left: 50%;
+  transform: translate(-50%, -59%); }
+
 @media only screen and (max-width: 768px) {
   .newPageContenet {
     margin-top: 50px; }
+  .aboutUs {
+    padding-top: 50px; }
+  .diagramSvg {
+    padding-bottom: 0px !important; }
+  .audioCOl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .tokenomics {
+    padding-top: 20px !important; }
   .taxProcentLine {
     max-width: calc(100% - 20px); }
   .Globally a {
@@ -790,7 +804,9 @@ a {
     text-align: right !important;
     margin-top: 30px !important; }
   .faq {
-    padding-top: 50px; }
+    padding-top: 0px; }
+  .features {
+    padding-top: 0px; }
   .roadmap__item-15 {
     padding-bottom: 78px; }
   .btns-green {
