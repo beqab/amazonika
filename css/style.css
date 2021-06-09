@@ -242,7 +242,7 @@ a {
         padding-bottom: 2px; }
         .firstSection__header ul a.active {
           border-bottom: 2px solid;
-          color: #7cb46b; }
+          color: #7cb46b !important; }
 
 .aboutUs {
   padding-top: 190px;
