@@ -262,8 +262,8 @@ a {
   }
   .jungle {
     position: absolute;
-    width: 46%;
-    right: 30px;
+    width: 42%;
+    right: 20px;
     top: -70px;
     max-height: 95vh;
     // max-width: calc();
@@ -928,9 +928,18 @@ a {
   .firstSection__header ul a {
     color: #fff;
   }
+
+  .firstSection__content .heding span {
+    font-size: 89px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
+  // .firstSection .jungle {
+  //   width: 43%;
+  //   right: 10px;
+  // }
+
   .HeaderFixed {
     font-size: 12px;
   }

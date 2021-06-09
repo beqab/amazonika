@@ -162,8 +162,8 @@ a {
     height: 100%; }
   .firstSection .jungle {
     position: absolute;
-    width: 46%;
-    right: 30px;
+    width: 42%;
+    right: 20px;
     top: -70px;
     max-height: 95vh; }
   .firstSection .coin1 {
@@ -647,7 +647,9 @@ a {
     top: -70px;
     max-height: 95vh; }
   .firstSection__header ul a {
-    color: #fff; } }
+    color: #fff; }
+  .firstSection__content .heding span {
+    font-size: 89px; } }
 
 @media only screen and (max-width: 1200px) {
   .HeaderFixed {
