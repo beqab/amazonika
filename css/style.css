@@ -448,10 +448,13 @@ a {
   .faq h3 {
     margin-bottom: 0px; }
 
-.Globally h3 {
-  text-transform: uppercase;
-  font-size: 19px;
-  margin-top: 9px; }
+.Globally {
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  .Globally h3 {
+    text-transform: uppercase;
+    font-size: 19px;
+    margin-top: 9px; }
 
 .contact {
   padding-top: 150px;
