@@ -70,6 +70,15 @@
   font-weight: 300;
   font-style: italic; }
 
+#audio {
+  width: 148px;
+  position: fixed;
+  top: 28px;
+  z-index: 1231;
+  height: 28px;
+  left: 0;
+  box-shadow: 0px 31px 34px -14px rgba(37, 74, 31, 0.3); }
+
 body {
   font-family: "Euclid Circular B"; }
 
