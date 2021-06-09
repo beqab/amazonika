@@ -76,8 +76,7 @@
   top: 28px;
   z-index: 1231;
   height: 28px;
-  left: 0;
-  box-shadow: 0px 31px 34px -14px rgba(37, 74, 31, 0.3); }
+  left: 15px; }
 
 body {
   font-family: "Euclid Circular B"; }
@@ -605,6 +604,40 @@ a {
   .logosLine img {
     max-width: 100%; }
 
+.tax {
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+.taxProcentLine {
+  width: 100%;
+  display: flex; }
+  .taxProcentLine span {
+    font-size: 14px; }
+  .taxProcentLine > div > div {
+    color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 4px solid #e5e5e5;
+    margin-bottom: 8px; }
+  .taxProcentLine .procent4 {
+    width: 40%; }
+    .taxProcentLine .procent4 div {
+      background: linear-gradient(90deg, #e0a607 0%, rgba(224, 166, 7, 0.7) 100%); }
+  .taxProcentLine .procent3 {
+    width: 30%; }
+    .taxProcentLine .procent3 div {
+      background: linear-gradient(90deg, #25d043 0%, rgba(37, 208, 67, 0.7) 100%); }
+  .taxProcentLine .procent2 {
+    width: 20%; }
+    .taxProcentLine .procent2 div {
+      background: linear-gradient(90deg, #df5030 0%, rgba(223, 80, 48, 0.7) 100%); }
+  .taxProcentLine .procent1 {
+    width: 10%; }
+    .taxProcentLine .procent1 div {
+      background: linear-gradient(90deg, #2e6ba9 0%, rgba(46, 107, 169, 0.7) 100%); }
+
 @media only screen and (max-width: 1320px) {
   .roadmap {
     overflow: hidden; }
@@ -630,6 +663,8 @@ a {
     max-width: 1120px !important; } }
 
 @media only screen and (max-width: 768px) {
+  .taxProcentLine {
+    max-width: calc(100% - 20px); }
   .Globally a {
     font-size: 12px;
     margin-top: 30px; }
