@@ -394,9 +394,18 @@ a {
   }
 }
 
+.HeaderFixed__right {
+  a {
+    color: #fff;
+    svg {
+      color: #fff;
+    }
+  }
+}
 .tokenomics {
   background-color: #e5e5e5;
   padding-bottom: 400px;
+
   padding-top: 120px;
   background-color: #e5e5e5;
   background-image: url("../img/Group 85.png");
@@ -994,6 +1003,9 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .newPageContenet {
+    margin-top: 50px;
+  }
   .taxProcentLine {
     max-width: calc(100% - 20px);
   }

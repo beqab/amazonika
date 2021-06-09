@@ -261,6 +261,11 @@ a {
   .features .dubbleTitle span {
     transform: translate(-50%, -50%); }
 
+.HeaderFixed__right a {
+  color: #fff; }
+  .HeaderFixed__right a svg {
+    color: #fff; }
+
 .tokenomics {
   background-color: #e5e5e5;
   padding-bottom: 400px;
@@ -690,6 +695,8 @@ a {
     max-width: 1120px !important; } }
 
 @media only screen and (max-width: 768px) {
+  .newPageContenet {
+    margin-top: 50px; }
   .taxProcentLine {
     max-width: calc(100% - 20px); }
   .Globally a {
