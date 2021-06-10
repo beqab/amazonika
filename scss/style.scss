@@ -847,6 +847,7 @@ a {
 
 .newPageContenet {
   margin-top: 140px;
+  background: red;
   .dubbleTitle h2 {
     font-size: 65px;
   }
@@ -1011,6 +1012,16 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .firstSection {
+    background-color: transparent;
+    background-image: url("../img/Group 82.png"), url("../img/Group 83.png");
+    background-repeat: no-repeat;
+    background-size: 140px 120px;
+    background-position: 0 0, right top;
+    margin-top: 0px;
+    padding-top: 1px !important;
+    margin-top: 54px !important;
+  }
   .newPageContenet {
     margin-top: 50px;
   }
@@ -1152,9 +1163,9 @@ a {
   }
   .roadmap__item {
     margin-left: auto !important;
-    margin-right: 0px !important;
+    margin-right: auto !important;
     max-width: 80%;
-    text-align: right !important;
+    text-align: left !important;
     margin-top: 30px !important;
   }
 
