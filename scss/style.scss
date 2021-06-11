@@ -665,9 +665,28 @@ a {
   }
 }
 
+.btnHover {
+  transition: 0.3s;
+  &:hover {
+    box-shadow: -1px 6px 9px 4px rgba(0, 0, 0, 0.336),
+      inset 8px -8px 10px rgba(0, 0, 0, 0.295);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 .Globally-item {
   max-width: 282px;
   margin: auto;
+  transition: 0.3s;
+  img {
+    transition: 0.3s;
+  }
+  &:hover {
+    // img {
+    transform: scale(1.1);
+    // }
+  }
 }
 
 .contact {
@@ -1200,6 +1219,10 @@ a {
   margin-bottom: 40px;
   max-width: 282px;
   margin: auto;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.1);
+  }
   img {
     height: 80px;
     display: inline-block;

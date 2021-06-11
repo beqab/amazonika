@@ -467,9 +467,21 @@ a {
     font-size: 19px;
     margin-top: 9px; }
 
+.btnHover {
+  transition: 0.3s; }
+  .btnHover:hover {
+    box-shadow: -1px 6px 9px 4px rgba(0, 0, 0, 0.336), inset 8px -8px 10px rgba(0, 0, 0, 0.295);
+    color: #fff;
+    text-decoration: none; }
+
 .Globally-item {
   max-width: 282px;
-  margin: auto; }
+  margin: auto;
+  transition: 0.3s; }
+  .Globally-item img {
+    transition: 0.3s; }
+  .Globally-item:hover {
+    transform: scale(1.1); }
 
 .contact {
   padding-top: 150px;
@@ -832,7 +844,10 @@ a {
   text-align: left;
   margin-bottom: 40px;
   max-width: 282px;
-  margin: auto; }
+  margin: auto;
+  transition: 0.2s; }
+  .feature-item:hover {
+    transform: scale(1.1); }
   .feature-item img {
     height: 80px;
     display: inline-block;
