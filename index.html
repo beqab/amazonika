@@ -511,11 +511,7 @@
                   </div>
                 </div>
                 </div>
-                <div class="btns mt-5 d-flex">
-                  <a style="width: 250px;" class="btns-green m-auto btnHover" target="_blank" href="/amazonika/Amazonika_Lightpaper_Draft.pdf">
-                    Amazonika Lightpaper 
-                  </a>
-                </div>
+               
             </div>
             
           </div>
@@ -528,6 +524,11 @@
           </div>
         
           
+        </div>
+        <div class="btns mt-5 d-flex Lightpaper ">
+          <a style="width: 250px;" class="btns-green m-auto btnHover" target="_blank" href="/amazonika/Amazonika_Lightpaper_Draft.pdf">
+            Amazonika Lightpaper 
+          </a>
         </div>
       </div>
     </section>
@@ -1152,10 +1153,10 @@ function makeTimer() {
     if (minutes < "10") { minutes = "0" + minutes; }
     if (seconds < "10") { seconds = "0" + seconds; }
 
-    $("#days").html(days + "<span> Days</span>");
-    $("#hours").html(hours + "<span> Hours</span>");
-    $("#minutes").html(minutes + "<span> Minutes</span>");
-    $("#seconds").html(seconds + "<span> Seconds</span>");		
+    $("#days").html( `<b>${days} </b>` + "<span> Days</span>");
+    $("#hours").html( `<b>${hours} </b>` + "<span> Hours</span>");
+    $("#minutes").html(  `<b>${minutes} </b>` + "<span> Minutes</span>");
+    $("#seconds").html( `<b>${seconds} </b>` + "<span> Seconds</span>");		
 
 }
 
