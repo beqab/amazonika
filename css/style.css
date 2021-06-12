@@ -732,8 +732,12 @@ a {
   .Lightpaper {
     transform: translateY(-70px); }
   #timer > div {
-    width: 90px;
-    height: 90px; }
+    width: 66px;
+    height: 66px; }
+    #timer > div b {
+      font-size: 24px; }
+    #timer > div span {
+      font-size: 16px; }
   #seconds {
     margin-right: 0 !important; }
   .firstSection {
@@ -763,7 +767,7 @@ a {
     font-size: 12px;
     margin-top: 30px; }
   .Globally h3 {
-    font-size: 14px; }
+    font-size: 12px; }
   .Globally p {
     font-size: 13px; }
   .HeaderFixed {

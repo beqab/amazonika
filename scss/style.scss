@@ -1058,8 +1058,14 @@ a {
     transform: translateY(-70px);
   }
   #timer > div {
-    width: 90px;
-    height: 90px;
+    width: 66px;
+    height: 66px;
+    b {
+      font-size: 24px;
+    }
+    span {
+      font-size: 16px;
+    }
   }
   #seconds {
     margin-right: 0 !important;
@@ -1102,7 +1108,7 @@ a {
       margin-top: 30px;
     }
     h3 {
-      font-size: 14px;
+      font-size: 12px;
     }
     p {
       font-size: 13px;
