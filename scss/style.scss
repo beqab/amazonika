@@ -1069,6 +1069,13 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .HeaderFixed__right a {
+    margin: 0 3px !important;
+    svg {
+      height: 16px !important;
+    }
+  }
+
   .Lightpaper {
     transform: translateY(-70px);
   }
