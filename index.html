@@ -653,7 +653,7 @@
           </span>
           <p>
             15.06.2021 Website and Telegram Launch to <br/>
-             celebrate World Environment Day
+             celebrate World Rainforest Day 
           </p>
         </div>
 
@@ -667,13 +667,13 @@
         <div class="roadmap__item roadmap__item-4 right">
           <div>2021 Q2</div>
           <span>
-            Pre Sale initiation 
+            Pre-Sale initiation 
           </span>
         </div>
         <div class="roadmap__item roadmap__item-5 right">
           <div>2021 Q2</div>
           <span>
-            22.06.2021 Official Public Sale on PCS
+             22.06.2021 Official Public Sale on PCS Pancakeswap
           </span>
         </div>
         <div class="roadmap__item roadmap__item-6 right">
@@ -685,7 +685,7 @@
         <div class="roadmap__item roadmap__item-7 right">
           <div>2021 Q2</div>
           <span>
-            Smart Contract Audit
+            Phase I Marketing
           </span>
           <p>
             Initiating the first phase of our marketing and influencers campaign <br/>
@@ -1204,14 +1204,14 @@ $("#contactForm").on( "submit",function(e){
         values[this.name] = $(this).val();
     });
   console.log(values)
-  fetch("https://amazonika.io/test.php/", {
-  method: "POST", 
-  body: JSON.stringify(values)
-}).then(res => {
-  // $("#myModal").addClass("show")
-  $(".trigger-btn").trigger("click")
-  console.log("Request complete! response:", res);
-});
+//   fetch("https://amazonika.io/test.php/", {
+//   method: "POST", 
+//   body: JSON.stringify(values)
+// }).then(res => {
+//   // $("#myModal").addClass("show")
+//   $(".trigger-btn").trigger("click")
+//   console.log("Request complete! response:", res);
+// });
   // debugger
 
 //   $.ajax({
@@ -1228,17 +1228,18 @@ $("#contactForm").on( "submit",function(e){
 // });
 
 
-// $.get({
-//     method: 'GET',
-//     url: 'api.php',
-//     headers: {
-//         'Content-Type': 'application/json',
-//     },
-//     // query parameters go under "data" as an Object
-//     data: {
-//         client: 'mikescafe'
-//     }
-// });
+$.get({
+    method: 'GET',
+    url: 'https://amazonika.io/test.php/',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    // query parameters go under "data" as an Object
+    data: values,
+    success: function(data) {
+      $(".trigger-btn").trigger("click")
+    }
+});
 })
 
 
